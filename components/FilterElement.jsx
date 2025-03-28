@@ -1,17 +1,18 @@
-import React from 'react'
+import React from "react";
+import "./FilerElement.css";
 
 function FilterElement() {
   return (
-   <>
-   <div>
-    <input type="text" placeholder='Enter the Country Name'/>
-   </div>
-  <div className='filer-box'>
-  <button className='filter-btn'>Filter</button>
-  
-  </div>
-   </>
-  )
+    <>
+      <div className="filter-element">
+        <input type="text" className="input-tag" placeholder="Enter the Country Name" />
+
+        <div className="filer-box">
+          <button className="filter-btn">Filter</button>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default FilterElement
+export default FilterElement;
