@@ -1,0 +1,50 @@
+/* Default light mode styles */
+body {
+    background-color: #fafafa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #202c37;
+    color: #fff;
+}
+
+/* Header specific styles */
+.main-header {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+   
+   
+}
+.header-container{
+    
+    max-width: 	1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-mode .main-header {
+    background-color: #2b3945;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styles */
+.mode-btn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: inherit;
+}
