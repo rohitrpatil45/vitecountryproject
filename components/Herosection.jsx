@@ -17,7 +17,7 @@ function Herosection() {
                     <img src={item.flags.svg} alt={item.name} />{" "}
                     {/* ✅ Fixed img src */}
                     <h2>{item.name}</h2>
-                    <p>Capital: {item.capital}</p>{" "}
+                    <p>Capital: {item.capital}</p>
                     {/* ✅ Fixed the label for clarity */}
                   </div>
                 </div>
