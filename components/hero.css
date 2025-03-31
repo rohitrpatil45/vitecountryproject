@@ -1,20 +1,22 @@
-
-
-
-.container-box{
-    max-width: 	1280px;
-    margin: 0 auto;   
-     display: grid;
-     background: hotpink;
+.container-box {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: hotpink;
 
 }
 
-.container-box{
+.country-box {
+    max-width: 200px;
     /* display: grid; */
+    /* grid-template-columns: auto auto; */
     border: 2px solid green;
 }
 
 .country-box img {
-    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
+
     border: 2px solid green;
 }
