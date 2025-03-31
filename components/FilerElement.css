@@ -8,7 +8,7 @@
     /* max-height: 56px;
     min-height: 42px; */
     width: 100%;
-position: relative;
+    position: relative;
 }
 
 .filter-element input {
@@ -22,29 +22,40 @@ position: relative;
     width: 106px;
     /* color: hotpink; */
     font-weight: 800;
-    position: relative;
+    /* position: relative; */
 }
 
 
-.filer-box{
+.filer-box {
     position: relative;
     right: 0;
 }
 
-.filerOption{
+.filerOption {
     position: absolute;
     background: red;
-}
-ul{
-    background: #000;
-   align-content: center;
+    /* width: 100%; */
 }
 
-.ul-list li{
+ul {
+    background: #000;
+text-decoration: none;
+}
+
+.ul-list li {
     margin: 5px;
-background: gold;
-list-style: none;
-text-align: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: large;
+    text-decoration: none;
+    align-items: center;
+    background: gold;
+    list-style: none;
+    width: 100;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2EM;
+}
+
+
+.ul-list {
+    position: absolute;
+    right:      0px; 
 }
