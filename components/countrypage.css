@@ -1,0 +1,28 @@
+.main-country-page-container{
+    display: flex;
+    max-width: 	1280px;
+    margin: 0 auto;
+    min-height: 80vh;
+    background: hotpink;
+    align-items: center;
+    padding: 10px;
+    gap: 20px ;
+}
+.page-image-container {
+    /* background: red; */
+    max-width: 60%;
+}
+
+.page-image-container img{
+    max-width: 100%;
+    min-width: 80%;
+
+}
+
+.country-details-page{
+    /* min-width: 80%; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: gold;
+}
