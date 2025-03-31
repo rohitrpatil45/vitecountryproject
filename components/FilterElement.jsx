@@ -22,7 +22,7 @@ function FilterElement() {
           {
             menu && (
               <div className="filerOption">
-                <ul>
+                <ul className="ul-list">
                   {
                     ["Asia", "Africa", "Americas", "Europe"].map((regionName) => {
                       return(

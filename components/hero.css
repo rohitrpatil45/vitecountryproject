@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
-    background: hotpink;
+    /* background: hotpink; */
     justify-content: center;
     gap: 10px;
     padding: 15px;

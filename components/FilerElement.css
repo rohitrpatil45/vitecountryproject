@@ -1,25 +1,50 @@
-.filter-element{
-    max-width: 	1280px;
+.filter-element {
+    max-width: 1280px;
     margin: 0 auto;
     background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 56px;
-    min-height: 42px;
+    /* max-height: 56px;
+    min-height: 42px; */
     width: 100%;
-
+position: relative;
 }
 
-.filter-element input{
-height: 42px;
-width: 34%;
+.filter-element input {
+    height: 42px;
+    width: 34%;
 }
 
-.filer-box .filter-btn{
+.filer-box .filter-btn {
     background: green;
     height: 42px;
     width: 106px;
     /* color: hotpink; */
     font-weight: 800;
+    position: relative;
+}
+
+
+.filer-box{
+    position: relative;
+    right: 0;
+}
+
+.filerOption{
+    position: absolute;
+    background: red;
+}
+ul{
+    background: #000;
+   align-content: center;
+}
+
+.ul-list li{
+    margin: 5px;
+background: gold;
+list-style: none;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: large;
 }
