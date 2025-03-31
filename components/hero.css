@@ -2,13 +2,16 @@
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
     background: hotpink;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
 
 }
 
 .country-box {
-    max-width: 200px;
+    /* max-width: 250px; */
     /* display: grid; */
     /* grid-template-columns: auto auto; */
     border: 2px solid green;
