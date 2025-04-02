@@ -1,13 +1,14 @@
 .filter-element{
     max-width: 	1280px;
     margin: 0 auto;
-    background: red;
+    /* background: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 56px;
     min-height: 42px;
     width: 100%;
+    padding-top: 15px;
 
 }
 
