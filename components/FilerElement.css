@@ -1,26 +1,53 @@
-.filter-element{
-    max-width: 	1280px;
-    margin: 0 auto;
-    /* background: red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 56px;
-    min-height: 42px;
-    width: 100%;
-    padding-top: 15px;
-
+.filter-element {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 56px;
+  min-height: 42px;
+  width: 100%;
+  padding-top: 15px;
 }
 
-.filter-element input{
-height: 42px;
-width: 34%;
+.filter-element input {
+  height: 42px;
+  width: 34%;
 }
 
-.filer-box .filter-btn{
-    background: green;
-    height: 42px;
-    width: 106px;
-    /* color: hotpink; */
-    font-weight: 800;
+.filer-box .filter-btn {
+  background: green;
+  height: 42px;
+  width: 106px;
+  /* color: hotpink; */
+  font-weight: 800;
+}
+
+.filerOption {
+  position: relative;
+}
+.ul-list {
+  position: absolute;
+  height: auto;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Centers the items horizontally */
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  background-color: red;
+}
+
+.ul-list li {
+  /* color: hotpink; */
+  padding: 10px;
+  /* margin: 0 10px; */
+  list-style: none;
+  font-family: tahoma;
+  /* display: inline-block; */
+  background: green;
+  border: 2px solid ;
+  width: 100%;
+  /* text-align: center; */
 }
