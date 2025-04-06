@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FilerElement.css";
 
-function FilterElement() {
+function FilterElement({regionoption}) {
   const [menu, setmenu] = useState(false);
   const [select, setselected] = useState('')
 
@@ -13,8 +13,9 @@ function FilterElement() {
 
   const SetectOption = (option) => {
     setselected(option);
-    console.log(select)
+    // console.log(select)
     setmenu(!menu);
+    regionoption(option)
 
   }
 

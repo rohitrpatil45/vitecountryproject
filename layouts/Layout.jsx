@@ -9,7 +9,7 @@ function Layout() {
   return (
 <>
 <Header />
-<FilterElement />
+{/* <FilterElement /> */}
 <Herosection />
 {/* <Outlet /> */}
 
