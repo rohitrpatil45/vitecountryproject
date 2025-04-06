@@ -3,10 +3,20 @@ import "./FilerElement.css";
 
 function FilterElement() {
   const [menu, setmenu] = useState(false);
+  const [select, setselected] = useState('')
+
 
   const filerONOff = () => {
+   
     setmenu(!menu);
   };
+
+  const SetectOption = (option) => {
+    setselected(option);
+    console.log(select)
+    setmenu(!menu);
+
+  }
 
   return (
     <>
@@ -26,10 +36,15 @@ function FilterElement() {
                   {
                     ["Asia", "Africa", "Americas", "Europe"].map((regionName) => {
                       return(
-                        <li key={regionName} onClick={() => setmenu(regionName)}>{regionName}</li>
+                        <li key={regionName} onClick={() => SetectOption(regionName)} 
+                        >{regionName}</li>
+                        
                       )
+                    
+
                     })
                   }
+
                 </ul>
               </div>
             )

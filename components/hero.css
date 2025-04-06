@@ -11,17 +11,20 @@
 }
 
 .country-box {
+    padding: 7px;
+    overflow: hidden;
     /* max-width: 250px; */
     /* display: grid; */
     /* grid-template-columns: auto auto; */
-    border: 2px solid green;
+    border: 2px solid ;
 }
 
 .country-box img {
     width: 100%;
     object-fit: cover;
+    height: 200px;
 
-    border: 2px solid green;
+   
 }
 
 .filer-box{
