@@ -19,6 +19,7 @@
     /* grid-template-columns: auto auto; */
     border: 3px solid;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,5.2);
 }
 
 .country-box img {
@@ -27,6 +28,13 @@
     height: 200px;
 
 
+}
+
+.country-box :hover{
+    color: red;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 .filer-box {

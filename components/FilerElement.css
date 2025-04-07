@@ -17,11 +17,12 @@
 }
 
 .filer-box .filter-btn {
-  background: green;
+
   height: 42px;
   width: 106px;
   /* color: hotpink; */
   font-weight: 800;
+
 }
 
 .filerOption {
@@ -36,7 +37,7 @@
   flex-direction: column; /* Centers the items horizontally */
   list-style: none; /* Removes default bullet points */
   padding: 0;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .ul-list li {
@@ -46,8 +47,19 @@
   list-style: none;
   font-family: tahoma;
   /* display: inline-block; */
-  background: green;
+  background: #FF0000;
   border: 2px solid ;
   width: 100%;
   /* text-align: center; */
+}
+
+.filter-btn{
+  border-radius: 6px;
+}
+
+
+
+.filter-btn:hover{
+  background: red;
+  transition: all 0.2s ease;
 }
