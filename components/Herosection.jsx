@@ -43,7 +43,7 @@ function Herosection() {
         <div className="container-box">
           {filtercountry.map((list, index) => {
             return (
-              <Link to={'/country'}>
+              <Link to={`/country/${list.alpha3Code}`}>
               <div className="country-box" key={index}>
                 <img src={list.flags.svg} alt="list.name" />
                 <h2> Name :{list.name}</h2>

@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element:<Herosection />
       },
       {
-        path:"/country",
+        path:"/country/:alpha3Code",
         element:<CountryPage />
         
       }

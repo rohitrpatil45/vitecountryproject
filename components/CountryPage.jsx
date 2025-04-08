@@ -1,31 +1,47 @@
 import React from "react";
 import "./countrypage.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import data from "../data.json";
 
 function CountryPage() {
+  const { alpha3Code } = useParams();
+  // const { code } = useParams();
+
+  // const countrydetails = data.find((c) => c.name === alpha3Code)
+  const country = data.find((c) => c.alpha3Code === alpha3Code);
+
+  // if (!countrydetails) return <h2>Country not found</h2>;
   return (
     <>
-  
       <div className="main-country-page-container">
         <div className="page-image-container">
-          <img src="https://flagcdn.com/af.svg" alt="" />
+          <img src={country.flags.svg} alt="" />
         </div>
         <div className="country-details-page">
           <div className="detail-right">
-            <h2>name</h2>
-            <h2>population</h2>
-            <h2>region</h2>
-            <h2>capital</h2>
+            <h2>name: {country.name}</h2>
+            <h2>population: {country.population}</h2>
+            <h2>region: {country.region}</h2>
+            <h2>capital: {country.capital}</h2>
           </div>
           <div className="detail-left">
-            <h2>Domain</h2>
-            <h2>sub region</h2>
-            <h2>area</h2>
-            <h2>bordering country</h2>
+            <h2>Domain: {country.topLevelDomain}</h2>
+            <h2>sub region: {country.subregion}</h2>
+            <h2>area: {country.area}</h2>
+            <h2>
+              Border Share:{" "}
+              {country.borders?.length > 0
+                ? country.borders.map((border, i) => (
+                    <span key={i}>{border.toUpperCase()}, </span>
+                  ))
+                : "None"}
+            </h2>
+            {/* <h2>Border Share: {country.borders.map((border,i) => (
+              <span key={i}>{border.toUpperCase}</span>
+            ))}</h2> */}
           </div>
         </div>
       </div>
- 
     </>
   );
 }

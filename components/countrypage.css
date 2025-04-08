@@ -19,10 +19,13 @@
 
 }
 
+
 .country-details-page{
     /* min-width: 80%; */
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    gap: 20px;
     justify-content: space-between;
     /* background: gold; */
 }
