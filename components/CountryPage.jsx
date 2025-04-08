@@ -1,9 +1,11 @@
 import React from "react";
 import "./countrypage.css";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams , useNavigate } from "react-router-dom";
 import data from "../data.json";
 
 function CountryPage() {
+  const navigate = useNavigate();
+
   const { alpha3Code } = useParams();
   // const { code } = useParams();
 
@@ -13,7 +15,14 @@ function CountryPage() {
   // if (!countrydetails) return <h2>Country not found</h2>;
   return (
     <>
+    <div className="main-container-back-btn">
+    <button onClick={() => navigate(-1)}>
+      Back
+    </button>
+    </div>
+    
       <div className="main-country-page-container">
+        
         <div className="page-image-container">
           <img src={country.flags.svg} alt="" />
         </div>

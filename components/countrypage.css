@@ -13,6 +13,21 @@
     max-width: 60%;
 }
 
+.main-container-back-btn{
+    max-width: 	1280px;
+    margin: 0 auto;
+    padding-top: 20px;
+    /* background: red; */
+}
+
+.main-container-back-btn button{
+/* background: hotpink; */
+height: 40px;
+background: inherit;
+width: 80px;
+
+}
+
 .page-image-container img{
     max-width: 100%;
     min-width: 80%;
