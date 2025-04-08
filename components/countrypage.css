@@ -29,3 +29,74 @@
     justify-content: space-between;
     /* background: gold; */
 }
+.detail-right{
+    min-width: 40%;
+    /* background: red; */
+}
+.detail-left{
+    min-width: 60%;
+}
+
+@media screen and (max-width: 1100px) {
+    .main-country-page-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background: red; */
+        align-items: center;
+    }
+    .page-image-container{
+        max-width: 100%;
+    }
+    .main-country-page-container img{
+        width: 100%;
+
+    }
+
+    .country-details-page{
+        display: flex;
+    /* background: red; */
+    width: 100%;
+    justify-content: space-between;
+    }
+    .detail-right{
+        min-width: 50%;
+        /* background: gray; */
+    }
+    .detail-left{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .main-country-page-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-image-container{
+        max-width: 100%;
+    }
+    .main-country-page-container img{
+        width: 100%;
+
+    }
+    .country-details-page{
+        display: flex;
+        flex-direction: column;
+    /* background: red; */
+    width: 100%;
+    justify-content: space-between;
+    }
+    .detail-right{
+        min-width: 50%;
+        text-align: center;
+        /* background: gray; */
+    }
+    .detail-left{
+        text-align: center;
+        min-width: 50%;
+    
+
+    }}
