@@ -23,8 +23,9 @@
 .main-container-back-btn button{
 /* background: hotpink; */
 height: 40px;
-background: inherit;
+background: gold;
 width: 80px;
+border-radius: 5px ;
 
 }
 
