@@ -1,9 +1,11 @@
 import React from "react";
 import "./countrypage.css";
+import { Link } from "react-router-dom";
 
 function CountryPage() {
   return (
     <>
+  
       <div className="main-country-page-container">
         <div className="page-image-container">
           <img src="https://flagcdn.com/af.svg" alt="" />
@@ -23,6 +25,7 @@ function CountryPage() {
           </div>
         </div>
       </div>
+ 
     </>
   );
 }

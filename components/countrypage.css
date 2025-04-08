@@ -3,7 +3,7 @@
     max-width: 	1280px;
     margin: 0 auto;
     min-height: 80vh;
-    background: hotpink;
+    /* background: hotpink; */
     align-items: center;
     padding: 10px;
     gap: 20px ;
@@ -24,5 +24,5 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background: gold;
+    /* background: gold; */
 }

@@ -54,10 +54,18 @@
 }
 
 .filter-btn{
-  border-radius: 6px;
+  border-radius: 5px ;
+}
+
+.container-box a{
+  color: inherit;
+  text-decoration: none;
 }
 
 
+.filter-btn{
+  background: inherit;
+}
 
 .filter-btn:hover{
   background: red;

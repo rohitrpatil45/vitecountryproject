@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import Header from "../components/Header.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../layouts/Layout.jsx";
+import CountryPage from "../components/CountryPage.jsx";
+import Herosection from "../components/Herosection.jsx";
 
 
 const router = createBrowserRouter([
@@ -13,10 +15,20 @@ const router = createBrowserRouter([
     element:<Layout />,
     children:[
       {
+        path:'/',
+        element:<Herosection />
+      },
+      {
+        path:"/country",
+        element:<CountryPage />
         
       }
     ]
   },
+  {
+    path:"coun",
+    element:<CountryPage />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

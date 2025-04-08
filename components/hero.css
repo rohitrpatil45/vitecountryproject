@@ -38,8 +38,9 @@
 }
 
 .filer-box {
-    background: yellowgreen;
+    /* background: yellowgreen; */
     z-index: 100;
+    /* border-radius: 2px solid ; */
 }
 
 

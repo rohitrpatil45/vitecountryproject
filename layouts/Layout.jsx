@@ -10,8 +10,8 @@ function Layout() {
 <>
 <Header />
 {/* <FilterElement /> */}
-<Herosection />
-{/* <Outlet /> */}
+{/* <Herosection /> */}
+<Outlet />
 
 
 
