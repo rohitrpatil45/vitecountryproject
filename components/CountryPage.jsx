@@ -39,11 +39,19 @@ function CountryPage() {
             <h2>area: {country.area}</h2>
             <h2>
               Border Share:{" "}
+              <h2>
+              Border Share:{" "}
               {country.borders?.length > 0
                 ? country.borders.map((border, i) => (
-                    <span key={i}>{border.toUpperCase()}, </span>
+                  <Link to={`/country/${border}`}>
+                  <span className="borderspan" key={i}>
+               {border}
+               </span>
+                  </Link>
+                  
                   ))
                 : "None"}
+            </h2>
             </h2>
             {/* <h2>Border Share: {country.borders.map((border,i) => (
               <span key={i}>{border.toUpperCase}</span>
