@@ -32,7 +32,7 @@ border-radius: 5px ;
 
 }
 
-.page-image-container img{
+.page-image-container .photo{
     max-width: 100%;
     min-width: 80%;
 
@@ -82,8 +82,10 @@ a{
     }
     .page-image-container{
         max-width: 100%;
+        width: 100%;
+
     }
-    .main-country-page-container img{
+    .main-country-page-container .photo{
         width: 100%;
 
     }
@@ -109,12 +111,15 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .page-image-container{
         max-width: 100%;
-    }
-    .main-country-page-container img{
         width: 100%;
+    }
+    .main-country-page-container .photo{
+        width: 100%;
+        /* object-fit: cover; */
 
     }
     .country-details-page{
