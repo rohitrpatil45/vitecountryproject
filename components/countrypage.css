@@ -20,7 +20,7 @@
     /* background: red; */
 }
 .page-image-container{
-    width: 50%;
+    width: 60%;
 }
 
 .main-container-back-btn button{
@@ -34,7 +34,8 @@ border-radius: 5px ;
 
 .page-image-container .photo{
     max-width: 100%;
-    min-width: 80%;
+    min-width: 70%;
+    height: auto;
 
 }
 
@@ -82,7 +83,7 @@ a{
     }
     .page-image-container{
         max-width: 100%;
-        width: 100%;
+        /* width: 100%; */
 
     }
     .main-country-page-container .photo{

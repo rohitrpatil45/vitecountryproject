@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./countrypage.css";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import data from "../data.json";
+import ShiranEffectCuntryPage from "./ShiranEffectCuntryPage";
 
 function CountryPage() {
   const navigate = useNavigate();
@@ -17,8 +18,9 @@ function CountryPage() {
   // if (!country) return <h2>Loading or Country not found</h2>;
 
   return (
+
     <>{
-      country.length < 1 ? <h1>ruk re lavde</h1> :  (
+      !country ? <ShiranEffectCuntryPage /> :  (
         <>
          <div className="main-container-back-btn">
       <button onClick={() => navigate(-1)}>Back</button>
@@ -26,7 +28,7 @@ function CountryPage() {
 
     <div className="main-country-page-container">
       <div className="page-image-container">
-        <img src={country.flags.svg} alt={country.name} />
+        <img className="photo" src={country.flags.svg} alt={country.name} />
       </div>
       <div className="country-details-page">
         <div className="detail-right">

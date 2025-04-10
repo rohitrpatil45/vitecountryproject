@@ -1,6 +1,7 @@
 import React from 'react'
 // import './ShimareffectCOuntry.css'
 import './ShimareffectCOuntry.css'
+import './countrypage.css'
 
 
 function ShiranEffectCuntryPage() {
@@ -8,7 +9,7 @@ function ShiranEffectCuntryPage() {
     <div className='main-country-page-container'>
         <div className='page-image-container'>
             <div className=''>
-                <div className='photo'></div>
+                <div className='photo shimar-effect'></div>
 
             </div>
         </div>
